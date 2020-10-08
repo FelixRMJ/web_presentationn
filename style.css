@@ -51,11 +51,42 @@
   }
 
   .navbar li{
-    padding: 10px 20px;
-    height: 90%;
+    padding: 0 20px;
+    
   }
 
   .navbar li a:hover{
     color: coral;
     border-bottom: coral solid 2px;
+  }
+
+   /* ================
+        SHOWCASE      
+  ================= */
+  .showcase-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    height: 83.5vh;
+    width: 75vw;
+    margin: auto;
+  }
+  .display{
+    display: flex;
+    background: chartreuse;
+    /* align-items: center; */
+    height: 50%;
+    width: 100%;
+    border: black solid 1px;
+  }
+  .left-box{
+    background: url('./media/img/programming.jpg') no-repeat center/cover;
+    height: 100%;
+    width: 50%;
+  }
+
+  .box{
+    width: 50%;
   }
