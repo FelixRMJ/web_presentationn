@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap');
+
+
 /* ================
         GLOBAL      
   ================= */
@@ -9,6 +12,7 @@
 
   body{
     background: blue;
+    font-family: 'Source Code Pro', monospace;
   }
 
   a{
@@ -18,4 +22,29 @@
 
   ul{
     list-style: none;
+  }
+
+  .logo-color,
+  .current{
+    color: coral;
+  }
+
+  /* ================
+        NAVBAR      
+  ================= */
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 70px;
+    background: darkblue;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+
   }
