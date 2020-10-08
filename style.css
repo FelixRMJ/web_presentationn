@@ -13,6 +13,7 @@
   body{
     background: blue;
     font-family: 'Source Code Pro', monospace;
+    line-height: 1.2em;
   }
 
   a{
@@ -46,5 +47,15 @@
     display: flex;
     justify-content: space-around;
     margin: 10px;
+    height: 90%;
+  }
 
+  .navbar li{
+    padding: 10px 20px;
+    height: 90%;
+  }
+
+  .navbar li a:hover{
+    color: coral;
+    border-bottom: coral solid 2px;
   }
