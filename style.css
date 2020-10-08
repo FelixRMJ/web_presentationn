@@ -51,13 +51,15 @@
   }
 
   .navbar li{
-    padding: 0 20px;
+    padding: 0 10px;
+    font-size: 14px;
     
   }
 
   .navbar li a:hover{
     color: coral;
     border-bottom: coral solid 2px;
+    padding-bottom: 20px;;
   }
 
    /* ================
@@ -76,7 +78,7 @@
   .display{
     display: flex;
     background: chartreuse;
-    /* align-items: center; */
+    align-items: center;
     height: 50%;
     width: 100%;
     border: black solid 1px;
