@@ -12,6 +12,11 @@
     display: inline-block;
   }
 
+  .btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
   .flex-items{
     display: flex;
     justify-content: center;
@@ -22,11 +27,12 @@
     background-color: #202020;
     color: #fff;
     border-top: #f4f4f4 1px solid;
+    border-bottom: #f4f4f4 1px solid;
   }
   
   .flex-items p{
     font-size: 0.875rem;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   
   .flex-columns{
@@ -45,6 +51,62 @@
     align-self: center;
     padding-top: 0.875rem;
   
+  }
+
+  .flex-columns-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .flex-columns-about .rows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .flex-columns-about .rows .column1{
+    background: url(./media/img/profile.jpg) no-repeat center/cover;
+    height: 100%;
+    width: 50%;
+    /* align-self: flex-start; */
+  }
+  .flex-columns-about .rows .column2{
+    background: coral;
+    height: 100%;
+    width: 50%;
+    /* align-self: flex-start; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .flex-columns-about p{
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .icons-sm{
+    display: flex;
+    flex-direction: row;
+  }
+  .content-icons ul{
+    display: flex;
+    padding: 10px 20px;
+    margin: 0 20px;
+  }
+  .content-icons ul li{
+    display: flex;
+    padding: 10px 20px;
+    margin: 0 20px;
   }
 
 /* ================
@@ -91,7 +153,7 @@
     color: white;
     height: 4.375rem;
     background-color: #202020;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100%;
     position: fixed;
     top: 0;
@@ -168,3 +230,10 @@
   .flex-item-3 i{
     color: blue;
   }
+
+
+   /* ================
+        CONTACT
+  ================= */
+
+  
