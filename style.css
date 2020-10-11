@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap');
 
+  /* ================
+        Utilities
+  ================= */
+
+  .btn{
+    padding: 0.3125rem 0.9375rem;
+    background-color: coral;
+    border-radius: 5%;
+    font-size: 0.875rem;
+    display: inline-block;
+  }
 
 /* ================
-        GLOBAL      
+        GLOBAL
   ================= */
   *{
     box-sizing: border-box;
@@ -25,70 +36,79 @@
     list-style: none;
   }
 
-  .logo-color,
+  .text-primary,
   .current{
     color: coral;
   }
 
   /* ================
-        NAVBAR      
+        NAVBAR
   ================= */
 
-  .nav-container {
+  #navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
-    height: 70px;
-    background: darkblue;
+    height: 4.375rem;
+    background-color: #202020;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0r 1.875rem;
   }
 
   .navbar{
     display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    height: 90%;
   }
+
+  .navbar ul{
+    display: flex;
+  }
+
+
 
   .navbar li{
     padding: 0 10px;
     font-size: 14px;
-    
+
   }
 
+ 
   .navbar li a:hover{
     color: coral;
     border-bottom: coral solid 2px;
     padding-bottom: 20px;;
   }
 
-   /* ================
-        SHOWCASE      
-  ================= */
-  .showcase-container{
+    /* ================
+           HEADER
+     ================= */
+
+  .hero {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: columns;
     justify-content: center;
     align-items: center;
-    background: wheat;
-    height: 83.5vh;
-    width: 75vw;
-    margin: auto;
-  }
-  .display{
-    display: flex;
-    background: chartreuse;
-    align-items: center;
-    height: 50%;
-    width: 100%;
-    border: black solid 1px;
-  }
-  .left-box{
-    background: url('./media/img/programming.jpg') no-repeat center/cover;
-    height: 100%;
-    width: 50%;
+    color: #fff;
+    background: url(/media/img/programming.jpg)no-repeat center/cover;
+    height: 100vh;
   }
 
-  .box{
-    width: 50%;
+  .hero .content h1{
+    font-size: 3.4375rem;
+    font-weight: 300;
+    padding-bottom: 1.25rem;
+  }
+
+  .content p{
+    padding-bottom: 1.25rem;
+  }
+
+  .hero::before{
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
   }
