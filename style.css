@@ -12,6 +12,41 @@
     display: inline-block;
   }
 
+  .flex-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+    /* padding: 10px 0; */
+    background-color: #202020;
+    color: #fff;
+    border-top: #f4f4f4 1px solid;
+  }
+  
+  .flex-items p{
+    font-size: 0.875rem;
+    padding: 0 20px;
+  }
+  
+  .flex-columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .flex-columns h2{
+    font-weight: 300;
+    padding-top: 0.875rem;
+  }
+  
+  .flex-columns i{
+    align-self: center;
+    padding-top: 0.875rem;
+  
+  }
+
 /* ================
         GLOBAL
   ================= */
@@ -22,7 +57,7 @@
   }
 
   body{
-    background: blue;
+    background: #f4f4f4;
     font-family: 'Source Code Pro', monospace;
     line-height: 1.2em;
   }
@@ -39,6 +74,10 @@
   .text-primary,
   .current{
     color: coral;
+  }
+
+  img{
+    width: 100%;
   }
 
   /* ================
@@ -95,6 +134,7 @@
     color: #fff;
     background: url(/media/img/programming.jpg)no-repeat center/cover;
     height: 100vh;
+    text-align: center;
   }
 
   .hero .content h1{
@@ -108,7 +148,23 @@
   }
 
   .hero::before{
-    content: '';
+    content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
+  }
+
+  /* ABOUT ==> ICONS */
+
+  
+  .flex-item-1 i{
+    color: red;
+  }
+
+
+  .flex-item-2 i{
+    color: yellow;
+  }
+
+  .flex-item-3 i{
+    color: blue;
   }
